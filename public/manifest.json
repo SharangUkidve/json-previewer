@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "JSON Previewer",
+  "name": "JSON Previewer",
+  "description": "Preview, Validate, Format, Minify and Download JSON. Works Offline.",
   "icons": [
     {
       "src": "favicon.ico",

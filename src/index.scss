@@ -1,0 +1,112 @@
+:root {
+  --bg-root: #fafafa;
+  --color-text: #333333;
+  --color-border: #c6c6c8;
+  --color-key: #5e0707;
+  --color-null: #800000;
+  --color-link: #4169e1;
+  --color-number: #a166dc;
+  --color-boolean: darkblue;
+  --bg-tag: #c294ef;
+  --color-tag: #333333;
+  --bg-length: #c6c6c880;
+  --color-length: #b22222;
+  --bg-header: #fafafa;
+  --color-header-link: #4169e1;
+  --color-header-link-active: #1753e8;
+  --color-error: #b22222;
+  --bg-toast: #c6c6c8;
+  --color-box-shadow: rgba(0, 0, 0, 0.35);
+  --color-placeholder: #6d6c79;
+
+  &.dark {
+    --bg-root: #2c2c2e;
+    --color-text: #fffffff7;
+    --color-border: #6a6a6f;
+    --color-key: #ffd700;
+    --color-null: red;
+    //--color-link: #0089ff;
+    --color-link: #05d505;
+    --color-number: #cfa4f9;
+    --bg-length: #efeff4;
+    --bg-header: #333333;
+    --color-header-link: rgba(255, 215, 0, 0.7);
+    --color-header-link-active: #ffd700;
+    --color-error: #fc8383;
+    --bg-toast: #38383a;
+    --color-placeholder: #bfbcd7;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-root);
+  color: var(--color-text);
+  min-width: 360px;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+button:not(:disabled),
+a {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font-size: inherit;
+  outline: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+
+input,
+textarea {
+  color: inherit;
+  background-color: inherit;
+}
+
+#root {
+  overflow: auto;
+  height: 100%;
+
+  @media screen and (max-width: 600px) {
+    flex-wrap: wrap;
+  }
+}
+
+.material-icons-round {
+  &.xl {
+    font-size: 3rem;
+  }
+}
